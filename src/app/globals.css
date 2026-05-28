@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #F5F1E8;
+  --color-surface: #FAF8F2;
+  --color-text: #3F454C;
+  --color-muted: #9C948A;
+  --color-border: #E4DCCF;
+  --color-accent: #B88E73;
+  --color-accent-hover: #A67C61;
+}
+
+:root {
+  --font-display: "General Sans", var(--font-inter, "Inter"), system-ui, -apple-system, sans-serif;
+  --font-body: var(--font-inter, "Inter"), system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--color-bg);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  font-weight: 500;
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  text-transform: lowercase;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #fff;
+}
